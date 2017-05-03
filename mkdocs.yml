@@ -1,0 +1,5 @@
+site_name: Theory of Everything @ CI Team
+repo_url: https://github.com/ci-team/theory-of-everything
+docs_dir: content
+theme: yeti
+

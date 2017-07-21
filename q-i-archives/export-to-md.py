@@ -57,9 +57,8 @@ def get_users():
 USERS = get_users()
 
 def get_date(ts_string):
-    return ts_string
     return datetime.datetime.fromtimestamp(
-        int(ts_string)
+        int(ts_string)/1000
     ).strftime('%Y-%m-%d %H:%M:%S')
 
 for cid, cdata in CATEGORIES.items():

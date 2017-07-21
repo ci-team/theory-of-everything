@@ -2,7 +2,7 @@
 slug: 3/example-of-git-workflow-for-bitbucket
 title: Example of Git Workflow for BitBucket
 author: admin
-date: 1496496001104
+date: 2017-06-03 13:20:01
 tags: 
 categories: Knowledge Base
 link: https://quantum-integration.org/topic/3/example-of-git-workflow-for-bitbucket

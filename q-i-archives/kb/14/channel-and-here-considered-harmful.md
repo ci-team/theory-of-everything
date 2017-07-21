@@ -2,7 +2,7 @@
 slug: 14/channel-and-here-considered-harmful
 title: @channel and @here considered harmful
 author: bookwar
-date: 1498751670136
+date: 2017-06-29 15:54:30
 tags: communication,slack
 categories: Knowledge Base
 link: https://quantum-integration.org/topic/14/channel-and-here-considered-harmful

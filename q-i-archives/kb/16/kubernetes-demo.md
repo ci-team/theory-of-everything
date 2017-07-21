@@ -2,7 +2,7 @@
 slug: 16/kubernetes-demo
 title: Kubernetes demo
 author: bookwar
-date: 1500663089366
+date: 2017-07-21 18:51:29
 tags: kubernetes
 categories: Knowledge Base
 link: https://quantum-integration.org/topic/16/kubernetes-demo

@@ -21,16 +21,13 @@ R = redis.Redis("localhost", encoding='utf-8', decode_responses=True)
 LINK_TEMPLATE="https://quantum-integration.org/topic/{slug}"
 
 ARTICLE_TEMPLATE = \
-'''
----
+'''---
 slug: {slug}
 title: {title}
 author: {author}
 date: {date}
-
 tags: {tags}
 categories: {categories}
-
 link: {link}
 ---
 

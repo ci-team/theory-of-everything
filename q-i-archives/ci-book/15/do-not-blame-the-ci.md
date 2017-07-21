@@ -1,13 +1,10 @@
-
 ---
 slug: 15/do-not-blame-the-ci
 title: Do not blame the CI
 author: bookwar
 date: 1499878784257
-
 tags: ci-book
 categories: CI Book
-
 link: https://quantum-integration.org/topic/15/do-not-blame-the-ci
 ---
 

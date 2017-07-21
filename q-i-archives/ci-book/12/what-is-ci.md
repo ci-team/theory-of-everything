@@ -1,13 +1,10 @@
-
 ---
 slug: 12/what-is-ci
 title: What is CI?
 author: bookwar
 date: 1498468918200
-
 tags: ci-book
 categories: CI Book
-
 link: https://quantum-integration.org/topic/12/what-is-ci
 ---
 

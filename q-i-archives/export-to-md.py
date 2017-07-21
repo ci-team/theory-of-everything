@@ -62,10 +62,6 @@ def get_date(ts_string):
         int(ts_string)
     ).strftime('%Y-%m-%d %H:%M:%S')
 
-def int_pair(x):
-    logging.debug(x)
-    return ((int)(x[0]),(int)(x[1]))
-
 for cid, cdata in CATEGORIES.items():
     tids = R.zscan_iter("cid:%s:tids" % cid)
  
@@ -79,7 +75,7 @@ for cid, cdata in CATEGORIES.items():
             title = topic['title'],
             author = USERS[topic['uid']],
             date = get_date(topic['timestamp']),
-            tags = ",".join(R.smembers("topic:%s:tags" % tid)),
+            tags = ",".join(sorted(R.smembers("topic:%s:tags" % tid))),
             categories = cdata["name"],
             link = LINK_TEMPLATE.format(slug=topic['slug']),
             content = R.hget("post:%s" % topic["mainPid"], "content"),

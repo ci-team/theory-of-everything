@@ -3,7 +3,7 @@ slug: 10/layered-saltstack-environments
 title: Layered Saltstack environments
 author: bookwar
 date: 1498240487794
-tags: saltstack,cfgmgmt
+tags: cfgmgmt,saltstack
 categories: Knowledge Base
 link: https://quantum-integration.org/topic/10/layered-saltstack-environments
 ---

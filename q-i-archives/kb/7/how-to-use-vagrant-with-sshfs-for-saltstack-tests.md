@@ -3,7 +3,7 @@ slug: 7/how-to-use-vagrant-with-sshfs-for-saltstack-tests
 title: How to use Vagrant with sshfs for saltstack tests
 author: bookwar
 date: 1496762587521
-tags: vagrant,saltstack,how-to
+tags: how-to,saltstack,vagrant
 categories: Knowledge Base
 link: https://quantum-integration.org/topic/7/how-to-use-vagrant-with-sshfs-for-saltstack-tests
 ---

@@ -45,9 +45,9 @@ But keywords can also be used in a more organized way. If A-Team chooses its per
 
 ### Critical remark
 
-Note that the important step here is to promote the keyword or user group to the people outside of the team. It needs to be discoverable the same way as e-mail address or Jira project.
+Note that the crucial step here is to promote the keyword or user group to the people outside of the team. It needs to be discoverable the same way as e-mail address or Jira project. Add it to any landing page your team owns.
 
-We found it the most effective when you add line "To contact A-Team use keyword 'a-team'" to the #a-team-channel topic.
+We also  found it most effective to announce important keywords in the channel topic. Simply add line *“To contact A-Team use keyword **a-team**”* to the **#a-team-channel** topic and after some time people will learn to use it.
 
 ## Benefits
 
@@ -57,22 +57,22 @@ It increases the cross-team presence, as you can join more channels in a browsin
 
 It improves the overall usage of Slack as alerts become more specific and go directly to the people you want to target.
 
-## Example
+## Example 1: Support Channel
 
 Suppose we have a Datacenter Engineers and Office IT Engineers teams. Each team has its own responsibilities but they also share a lot of common knowledge.
 
 The Classical Way says we create a #dc-team and #it-team channels. The typical dialog then looks as follows:
 
+### The Support Struggle
+#### Act 1. In #dc-team
 ```txt
-In #dc-team
-
   user: @here Server ABC is not responding, please check!!   # Alert includes ~50 server users
   dc-eng: logs?
   user: ..
   dc-eng: ask at #it-team
-
-In #it-team:
-
+```
+#### Act 2. In #it-team
+```txt
   user: @here Can not reach server ABC, please check!!        # Alert includes ~100 office users
   user: dc-team send me here
   it-eng: logs?
@@ -80,24 +80,45 @@ In #it-team:
   it-eng: some more logs?
   user: ...
   it-eng: ask at #dc-team
-
-And back to #dc-team..
 ```
-In this case user has to repeat the entire context of the discussion again and again.
+#### Act 3. In #dc-team again
+```txt
+angry user: @here @channel PLEASE HELP!!!
+angry user: it-team sends me back here, because they said..(and here follows the complete misinterpretation of what it-team has actually said)
+...
+```
+Here user is bounced between channels and forced to repeat the entire context of the discussion. And I’ll leave up to you to calculate the amount of people alerted in these conversation.
 
-The Keyword Way says we should have just one channel, which is the #support channel. DC Engineers respond to the **dc-team** keyword, and Office IT Engineers to **it-team**.
+Now the Keyword Way says we should have just one channel, which is the #support channel. DC Engineers respond to the **dc-team** keyword, and Office IT Engineers to **it-team**.
 
 The above dialog would look as follows:
+### The better way
+
+#### In #support
 ```txt
-In #support
   user: dc-team, server ABC is not responding, please check!!   # Alert ~5 people
   dc-eng: logs?
   user: ..
   dc-eng: it-team, ^^                                         # Alert ~7 people
   it-eng: some more logs?
   user: ...
-  it-eng: @dc-eng ^^                                           # Alert 1 person, who is already participating
-...
+  it-eng: @dc-eng ^^                                           # Alert 1 person
+  <here the it-eng and dc-eng engineers start to dig in together>
 ```
-Here two team can be cast independently but share the context of the discussion. And channels can be aligned by topic, rather than by current team structure.
+Here two teams can be cast into conversation independently but they share the context of the discussion. They also can talk to each other directly, which eliminates the misinterpretation problem.
+
+## Example 2: Development Channel
+
+Suppose there is an ABC project with Dev, QA and Ops teams working on it.
+
+The common pattern here is to create **#abc-dev**, **#abc-qa** and **#abc-ops** channels. Issues which come from such a division are well known and I won’t even bother you with the play to show it.
+
+### The better way
+Create one **#abc** channel. And add **abc-qa**, **abc-dev** and **abc-ops** keywords, which would cover different aspects of the project. When project fails due to network issues in the datacenter, alert the **abc-ops**, when nightly tests start failing — use **abc-qa**, when there is a new feature planned — discuss it with **abc-dev**, but keep it all in the same channel.
+
+Even when you haven’t gone full DevOps yet, you can add a lot of transparency by reorganizing your communication channels.
+
+## Conclusion
+
+When using keywords and groups in Slack you do not need to align channels to team structure. The team structure is now covered by user groups or keywords, while channel can be aligned to the content. It gives you the flexibility, reduces fragmentation and increase overall cross-team collaboration based on projects and topics rather than formal structure.
 

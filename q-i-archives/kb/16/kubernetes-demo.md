@@ -90,7 +90,7 @@ Here is what we are going to do:
 * write an application and test it,
 * package it into a docker image, test it and publish to registry
 * deploy the application to the Kubernetes cluster and test it,
-* Roll out an update and, you get this by now, test it.
+* roll out an update and, you get this by now, test it.
 
 ## Step 1: Application
 
@@ -312,5 +312,5 @@ Call the service via external port again:
 $ wget -qO- http://192.168.99.100:30346
 Hello, world! My IP information: 172.17.0.8
 ```
-New version is rolled out and we got a different string.
+New version is rolled out and we've got a different string.
 
